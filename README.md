@@ -1,6 +1,14 @@
 # vinas_react
 A web-based NAS client system(developing)
 
+## Techs or modules
+* Ant-design
+* React.js
+* React-router
+* Axios
+* JWT
+* CryptoJS
+
 ## How to test this project
 
 1. Install dependencies

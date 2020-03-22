@@ -25,7 +25,7 @@ A web-based NAS client system(developing)
             if(res) {
                 const objectID = name;
                 // Edit this line
-                const url = `//PROXY_IP/api/user/media/?objectID=${ objectID }&accessToken=${ localStorage.getItem('accessToken') }&refreshToken=${ localStorage.getItem('refreshToken') }`;
+                const url = `//PROXY_LOCATION/api/user/media/?objectID=${ objectID }&accessToken=${ localStorage.getItem('accessToken') }&refreshToken=${ localStorage.getItem('refreshToken') }`;
                 setMediaURL(url);
                 setIsVideoModalVisible(true);
             } else {
@@ -42,7 +42,7 @@ A web-based NAS client system(developing)
             if(result) {
                 const iframe = document.createElement('iframe');
                 // Edit this line
-                iframe.src = `//PROXY_IP/api/user/getFile?objectID=${ objectID }&accessToken=${ localStorage.getItem('accessToken') }&refreshToken=${ localStorage.getItem('refreshToken') }`;
+                iframe.src = `//PROXY_LOCATION/api/user/getFile?objectID=${ objectID }&accessToken=${ localStorage.getItem('accessToken') }&refreshToken=${ localStorage.getItem('refreshToken') }`;
                 iframe.style.display = 'none';
                 // Todo: remove iframe by interval check
                 document.body.appendChild(iframe);

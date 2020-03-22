@@ -24,7 +24,7 @@ A web-based NAS client system(developing)
         authHelper.renewToken().then((res) => {
             if(res) {
                 const objectID = name;
-                // Eidt this line
+                // Edit this line
                 const url = `//PROXY_IP/api/user/media/?objectID=${ objectID }&accessToken=${ localStorage.getItem('accessToken') }&refreshToken=${ localStorage.getItem('refreshToken') }`;
                 setMediaURL(url);
                 setIsVideoModalVisible(true);
@@ -41,7 +41,7 @@ A web-based NAS client system(developing)
         .then((result) => {
             if(result) {
                 const iframe = document.createElement('iframe');
-                // Eidt this line
+                // Edit this line
                 iframe.src = `//PROXY_IP/api/user/getFile?objectID=${ objectID }&accessToken=${ localStorage.getItem('accessToken') }&refreshToken=${ localStorage.getItem('refreshToken') }`;
                 iframe.style.display = 'none';
                 // Todo: remove iframe by interval check
